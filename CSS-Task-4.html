@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Task-4</title>
+    <style>
+    .container{
+        display: flex;
+    }
+    #nav{
+        padding-top: 40px;
+        padding-bottom: 170px;
+    }
+    #b1{
+        background-color: rgb(14, 168, 94);
+    }
+    #b2{
+        background-color: rgb(1, 181, 252);
+        top:7px;            
+    }
+    #b3{
+        background-color: rgba(251, 22, 22, 0.9);
+        top:14px;
+    }
+    #b4{
+        background-color: rgb(98, 96, 96);
+        top:21px;
+    }
+    a:hover{
+        left: 2px;
+        transition: 0.3s;
+        border-radius: 7px 7px 7px 7px;            
+    }
+    tr{
+        border: 2px solid black;
+        margin-left: 0px;
+    }
+    #text{
+        padding: 10px 4px 300px 2px ;
+    }
+    .block{
+        border-radius: 0px 7px 7px 0px;
+        font-size: 20px;
+        width:40px;
+        height:50px;
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    .tooltip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .block:hover{
+        width:120px;
+        height:50px;
+        border-radius: 7px 10px 10px 7px;
+        left: 2px;
+        transition: 0.4s;
+    }
+    .block:hover .tooltip {
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">CSS Task 4</h2>
+    <table align="center" style="border-collapse: collapse; width: 40%; border-color: black "  >
+        <tr style="height:350px"> 
+            <div class="container">
+            <td style="width: 22%;" id="nav">
+                <div class="block" id="b1">
+                    <div class="tooltip" >HOME</div> 
+                </div>
+                <div class="block" id="b2">
+                    <div class="tooltip" >About us</div>
+                </div>
+                <div class="block" id="b3">
+                   <div class="tooltip" >Contact us</div>      
+               </div>         
+               <div class="block" id="b4">
+                   <div class="tooltip" >Support</div>
+               </div>            
+            </td>
+            <td id="text"> 
+                <h2>Hoverable navside bar</h2>
+                <p>Hover over the buttons in the left side navigation to open them.</p>
+            </td>
+            </div>
+        </tr>
+    </table> 
+</body>
+</html>

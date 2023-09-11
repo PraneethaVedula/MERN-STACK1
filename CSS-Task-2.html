@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Task-2</title>
+    <style>
+        *{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            color:blue;
+        }
+        .vertical{
+            border: 2px solid black;
+            display: flex;
+            width: 212px;
+            height: 257px;
+            padding-right: 3px;
+            justify-content: center;           
+        }
+        .vertical li{
+            width: 178px;
+            height: 28px;
+            background-color: skyblue;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .vertical li:hover{
+            color: white;
+            background-color: orange;
+        }
+        .horizontal{
+            border:2px solid black;
+            width: 35%;     
+        }
+        .horlist{
+            display: flex;
+            flex-direction: row;
+            padding-right: 10px;
+        }
+        .horizontal ul{
+            background-color: #dddddd ;
+            margin-left: 10px;          
+        }
+        .horizontal li{          
+            padding: 15px;
+            font-size: 20px;
+            border-right:1px solid blue ;
+        }
+        .horizontal li:hover{
+            color: white;
+            background-color: gray;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+        }   
+    </style>
+</head>
+<body>
+    <h2>CSS Task 2</h2>
+    <h3>VERTICAL NAVIGATION BAR</h3>
+    <div class="vertical">
+        <ul class = "verlist">
+            <li>Home</li>
+            <li>Java</li>
+            <li>Css</li>
+            <li>HTML</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h3>HORIZONTAL NAVIGATION BAR</h3>
+        <div class="horizontal">
+            <ul class = "horlist">
+                <li>Home</li>
+                <li>Java</li>
+                <li>Css</li>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </div>   
+</body>
+</html>
